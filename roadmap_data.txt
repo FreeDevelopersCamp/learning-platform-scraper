@@ -1,0 +1,42 @@
+This is the beginner friendly version of
+the Frontend roadmap. Make sure to
+Front-end
+HTML
+CSS
+JavaScript
+Git
+GitHub
+npm
+React
+Tailwind
+Vitest
+Find the detailed version of this roadmap
+along with other similar roadmaps
+roadmap.sh
+Visit the Detailed Version
+Important Tip
+Make sure to build as many projects as possible
+for each node of the roadmap.
+You should be able to find an intern or Junior Frontend
+Developer join after learning these three.
+Start applying for jobs and keep learning.
+Learn about Version Control Systems
+& start using Git for your future projects.
+Create your GitHub Profile and publish the
+projects you have developed so far to GitHub.
+Learn to use npm package manager. This should
+be a quick one. Just get the basics and move on.
+Create some project with React. Make sure to
+install some external npm packages and include
+API calls to fetch some external data.
+There are several CSS frameworks available. You
+can pick any. I would recommend learning Tailwind.
+Learn about different Testing types and how to
+test your frontend using something like Vitest.
+Depending on the depth of your knowledge and your
+projects, at this point, you should have enough knowledge
+to find a Junior to Mid-level (maybe even senior) position
+at any company. Keep learning and building projects till you
+find a job. Your job will teach you a lot as well.
+Continue Learning with following roadmap
+Visit Detailed Frontend Roadmap
