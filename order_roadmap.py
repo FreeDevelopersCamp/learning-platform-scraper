@@ -6,46 +6,42 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 
-# Correct path to ChromeDriver
-driver_path = r'chromedriver-win64\chromedriver.exe'  # Use raw string or double backslashes
-
-# Set up ChromeOptions
-service = Service(driver_path)
+# Set up ChromeDriver service and options
+service = Service(executable_path="chromedriver.exe")
 options = webdriver.ChromeOptions()
 
-# Initialize the ChromeDriver with Service and Options
-driver = webdriver.Chrome(service=service, options=options)
+# Initialize the driver
+driver = webdriver.Chrome(service=service)
 
-try:
-    # Open the ChatGPT webpage (replace with the actual URL if needed)
-    driver.get('https://chat.openai.com/')  # Change this to the actual ChatGPT URL
+# Open ChatGPT
+driver.get('https://chat.openai.com/')
 
-    # Wait for the page to load fully
-    time.sleep(10)  # Allow more time for the page to fully load
+# Wait for the input text area to be available
+WebDriverWait(driver, 20).until(
+    EC.presence_of_element_located((By.CSS_SELECTOR, "#prompt-textarea"))
+)
 
-    # Debugging: Print page source to inspect elements
-    print(driver.page_source)  # Optional: Uncomment to see the page source in the console
+# Find the input element using the correct CSS selector
+input_element = driver.find_element(By.CSS_SELECTOR, "#prompt-textarea")
 
-    # Find the chat input box using JavaScript execution if direct interaction fails
-    input_box = driver.execute_script('return document.querySelector("textarea");')
-    
-    # Use JavaScript to set the input value and send a message
-    driver.execute_script('arguments[0].value = arguments[1];', input_box, 'What is the capital of France?')
-    
-    # Trigger an 'input' event to simulate typing
-    driver.execute_script('arguments[0].dispatchEvent(new Event("input", { bubbles: true }));', input_box)
-    
-    # Submit the input
-    input_box.send_keys(Keys.RETURN)
+# Clear any existing text (if any)
+input_element.clear()
 
-    # Wait for the response to load
-    time.sleep(10)
+# Type the message and press Enter
+input_element.send_keys("What is the capital of France?" + Keys.ENTER)
 
-    # Extract the response (you might need to adjust the selector based on the page structure)
-    messages = driver.find_elements(By.CSS_SELECTOR, 'div.message')  # Adjust selector to target chat messages
-    response = messages[-1].text  # Assuming the last message is the response
-    print('ChatGPT Response:', response)
+# Wait for the message to appear in the chat area
+WebDriverWait(driver, 20).until(
+    EC.presence_of_element_located((By.CLASS_NAME, "whitespace-pre-wrap"))
+)
 
-finally:
-    # Close the browser
-    driver.quit()
+# # Optionally wait for GPT's response to appear (asynchronously)
+# WebDriverWait(driver, 30).until(
+#     EC.presence_of_element_located((By.XPATH, "//div[contains(@class,'result')]"))
+# )
+
+# Wait a bit for the response to be fully generated
+time.sleep(5)
+
+# Quit the driver (close the browser)
+driver.quit()
