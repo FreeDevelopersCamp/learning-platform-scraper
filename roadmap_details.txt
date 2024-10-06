@@ -1,0 +1,65 @@
+Topic: Learn about APIs (ID: EwvLPSI6AlZ4TnNIJTZA4)
+Title: APIs
+Explanation: An API (Application Programming Interface) is a set of defined rules and protocols that allow different software applications to communicate and interact with each other. It provides a standardized way for developers to access and manipulate the functionalities or data of a service, application, or platform without needing to understand its internal workings. APIs can be public or private and are commonly used to integrate disparate systems, facilitate third-party development, and enable interoperability between applications. They typically include endpoints, request methods (like GET, POST, PUT), and data formats (like JSON or XML) to interact with.
+Resources:
+  article articleWhat is an API? (https://aws.amazon.com/what-is/api/)
+  video videoWhat is an API (in 5 minutes) (https://www.youtube.com/watch?v=ByGJQzlzxQg)
+  feed feeddaily.dev API Feed (https://app.daily.dev/tags/rest-api)
+----------------------------------------
+Topic: Pick a Language (ID: 2f0ZO6GJElfZ2Eis28Hzg)
+Title: Learn a Language
+Explanation: Even if you’re a beginner the least you would have known is that Web Development is majorly classified into two facets: Frontend Development and Backend Development. And obviously, they both have their respective set of tools and technologies. For instance, when we talk about Frontend Development, there always comes 3 names first and foremost – HTML, CSS, and JavaScript. In the same way, when it comes to Backend Web Development – we primarily require a backend (or you can say server-side) programming language to make the website function along with various other tools & technologies such as databases, frameworks, web servers, etc.
+Resources:
+----------------------------------------
+Topic: Version Control Systems (ID: ezdqQW9wTUw93F6kjOzku)
+Title: Version Control Systems
+Explanation: Version Control Systems (VCS) are tools that manage and track changes to code or documents over time, allowing multiple users to collaborate on a project efficiently. They record every change made to files, enabling developers to revert to previous versions, compare changes, and maintain a history of modifications. VCS can be centralized, where the repository is hosted on a central server (e.g., Subversion), or distributed, where each user has a complete copy of the repository (e.g., Git, Mercurial). Version control facilitates collaboration, enhances code integrity, and supports continuous integration by enabling smooth management of concurrent changes and resolving conflicts.
+Resources:
+  roadmap roadmapLearn Git & GitHub (https://roadmap.sh/git-github)
+  official officialGit Documentation (https://git-scm.com/doc)
+  article articleWhat is Version Control? (https://www.atlassian.com/git/tutorials/what-is-version-control)
+  video videoVersion Control System (VCS) - Everything you need to know (https://www.youtube.com/watch?v=SVkuliabq4g)
+----------------------------------------
+Topic: Repo hosting services (ID: NvUcSDWBhzJZ31nzT4UlE)
+Title: Repo Hosting Services
+Explanation: Repo hosting services are platforms that provide storage, management, and collaboration tools for version-controlled code repositories. These services support version control systems like Git, Mercurial, or Subversion, allowing developers to manage and track changes to their codebases, collaborate with others, and automate workflows. Key features often include branching and merging, pull requests, issue tracking, code review, and integration with continuous integration/continuous deployment (CI/CD) pipelines. Popular repo hosting services include GitHub, GitLab, and Bitbucket, each offering various levels of free and paid features tailored to different team sizes and project requirements.
+Resources:
+  official officialGitHub (https://github.com)
+  official officialGitLab (https://about.gitlab.com/)
+  official officialBitBucket (https://bitbucket.org/product/guides/getting-started/overview)
+  article articleHow to choose the best source code repository (https://blockandcapital.com/en/choose-code-repository/)
+----------------------------------------
+Topic: Relational Databases (ID: r45b461NxLN6wBODJ5CNP)
+Title: Relational Databases
+Explanation: Relational databases are a type of database management system (DBMS) that organizes data into structured tables with rows and columns, using a schema to define data relationships and constraints. They employ Structured Query Language (SQL) for querying and managing data, supporting operations such as data retrieval, insertion, updating, and deletion. Relational databases enforce data integrity through keys (primary and foreign) and constraints (such as unique and not-null), and they are designed to handle complex queries, transactions, and data relationships efficiently. Examples of relational databases include MySQL, PostgreSQL, and Oracle Database. They are commonly used for applications requiring structured data storage, strong consistency, and complex querying capabilities.
+Resources:
+  course courseDatabases and SQL (https://www.edx.org/course/databases-5-sql)
+  article articleRelational Databases (https://www.ibm.com/cloud/learn/relational-databases)
+  article article51 Years of Relational Databases (https://learnsql.com/blog/codd-article-databases/)
+  article articleIntro To Relational Databases (https://www.udacity.com/course/intro-to-relational-databases--ud197)
+  video videoWhat is Relational Database (https://youtu.be/OqjJjpjDRLc)
+  feed feedExplore top posts about Backend Development (https://app.daily.dev/tags/backend?ref=roadmapsh)
+----------------------------------------
+Topic: More about Databases (ID: LJt27onEOeIBomiEMTyKd)
+Title: Databases
+Explanation: A database is a collection of useful data of one or more related organizations structured in a way to make data an asset to the organization. A database management system is a software designed to assist in maintaining and extracting large collections of data in a timely fashion.
+Resources:
+  article articleOracle: What is a Database? (https://www.oracle.com/database/what-is-database/)
+  article articlePrisma.io: What are Databases? (https://www.prisma.io/dataguide/intro/what-are-databases)
+  feed feedExplore top posts about Backend Development (https://app.daily.dev/tags/backend?ref=roadmapsh)
+----------------------------------------
+Topic: Caching (ID: ELj8af7Mi38kUbaPJfCUR)
+Title: Caching
+Explanation: Caching is a technique used in computing to store and retrieve frequently accessed data quickly, reducing the need to fetch it from the original, slower source repeatedly. It involves keeping a copy of data in a location that’s faster to access than its primary storage. Caching can occur at various levels, including browser caching, application-level caching, and database caching. It significantly improves performance by reducing latency, decreasing network traffic, and lowering the load on servers or databases. Common caching strategies include time-based expiration, least recently used (LRU) algorithms, and write-through or write-back policies. While caching enhances speed and efficiency, it also introduces challenges in maintaining data consistency and freshness. Effective cache management is crucial in balancing performance gains with the need for up-to-date information in dynamic systems.
+Resources:
+  article articleWhat is Caching - AWS (https://aws.amazon.com/caching/)
+  article articleCaching - Cloudflare (https://www.cloudflare.com/learning/cdn/what-is-caching/)
+----------------------------------------
+Topic: Testing (ID: STQQbPa7PE3gbjMdL6P-t)
+Title: Testing
+Explanation: Testing is a systematic process used to evaluate the functionality, performance, and quality of software or systems to ensure they meet specified requirements and standards. It involves various methodologies and levels, including unit testing (testing individual components), integration testing (verifying interactions between components), system testing (assessing the entire system’s behavior), and acceptance testing (confirming it meets user needs). Testing can be manual or automated and aims to identify defects, validate that features work as intended, and ensure the system performs reliably under different conditions. Effective testing is critical for delivering high-quality software and mitigating risks before deployment.
+Resources:
+  article articleWhat is Software Testing? (https://www.guru99.com/software-testing-introduction-importance.html)
+  article articleTesting Pyramid (https://www.browserstack.com/guide/testing-pyramid-for-test-automation)
+  feed feedExplore top posts about Testing (https://app.daily.dev/tags/testing?ref=roadmapsh)
+----------------------------------------
